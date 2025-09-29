@@ -1,0 +1,171 @@
+body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #030303e7;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameBody {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 2 / 1;
+}
+
+#background {
+    position: absolute;
+    width: 100%;
+    aspect-ratio: 2 / 1;
+    background-image: var(--background);
+    background-repeat: no-repeat;
+    background-size: 110%;
+    filter: blur(10px);
+    animation: moveBackground 10s linear infinite;
+}
+
+@keyframes moveBackground {
+  0% { background-position: 60% 50%; }
+  25% { background-position: 50% 60%; }
+  50% { background-position: 40% 50%; }
+  75% { background-position: 50% 40%; }
+  100% { background-position: 60% 50%; }
+}
+
+
+#lvlContainer {
+    position: absolute; bottom: 0%; left: 0%;
+    border: 5px solid black;
+    border-radius: 1vw;
+    margin: 0;
+    padding: 1%;
+    background-color: rgb(58, 31, 0);
+    height: 20%;
+    aspect-ratio: 3 / 1;
+
+}
+
+.lvl {
+    height: 60%;
+    aspect-ratio: 1 / 1;
+    background-color: rgb(190, 146, 93);
+    box-sizing: border-box;
+    border: 5px solid black;
+    border-radius: 50%;
+    font-size: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.expBar {
+    position: relative;
+    margin-top: 1%;
+    width: 90%;
+    aspect-ratio: 20 / 1;
+    border: 5px solid black;
+    color: white;
+}
+
+#expBar {
+    position: absolute;
+    background-color: rgb(255, 183, 0);
+    height: 100%;
+}
+
+.expInfo {
+    position: absolute;
+    font-size: 1vw;
+    z-index: 2;
+    height: 100%;
+    text-align: center;
+    margin-left: 1%;
+}
+
+#menu {
+    position: relative; top: 0%; left: 0%;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#title {
+    position: relative;
+    width: 50%;
+}
+#title img {
+    position: relative;
+    width: 100%;
+}
+
+#menu button {
+    width: 30%;
+    height: 20%;
+    visibility: hidden;
+    display: flex;
+}
+
+@keyframes stab {
+    from {left: -100%;}
+    60% {left: -120%;}
+    80% {left: 10%;}
+    100% {left: 0%;}
+}
+
+@keyframes stabobject {
+    from {left: 0%;}
+    60% {left: 0%;}
+    80% {left: 10%;}
+    100% {left: 0%;}
+}
+
+.animateSword {
+    position: relative;
+    visibility: visible;
+    width: 100%;
+    animation: stab 0.5s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.animateObject {
+    position: relative;
+    visibility: visible;
+    width: 100%;
+    z-index: 2;
+    animation: stabobject 0.5s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.button {
+    position: relative;
+    width: 100%;
+    visibility: visible;
+    z-index: 2;
+}
+
+.sword {
+    position: relative;
+    visibility: hidden;
+    width: 100%;
+}
+
+.swordcontainer {
+    position: absolute;
+    visibility: visible;
+    width: 30%;
+    height: auto;
+}
+
+.buttoncontainer {
+    position: absolute;
+    visibility: visible;
+    width: 30%;
+    height: auto;
+}

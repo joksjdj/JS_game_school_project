@@ -1,0 +1,84 @@
+* {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-drag: none;
+}
+p {
+    user-select: none;
+}
+:root {
+    --background: url(/Bilder/Universal/SVG/newBackground.svg);
+}
+
+
+.removeDistraction {
+    position: fixed; top: 0%; left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+}
+
+.askTutorial {
+    position: fixed; left: 25%;
+    width: 50%;
+    aspect-ratio: 2 / 1;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 100;
+}
+
+.askTutorial h1 {
+    border: 5px solid black;
+    background-color: rgb(58, 31, 0);
+    border-radius: 1vw;
+    box-sizing: border-box;
+    width: 100%;
+    height: 80%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tutorialButtonContainer {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.tutorialButton {
+    border: 5px solid black;
+    border-radius: 1vw;
+    box-sizing: border-box;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    font-size: 4vw;
+}
+
+.tutorialText {
+    position: fixed; top: 0%; left: 0%;
+    border: 5px solid black;
+    border-radius: 1vw;
+    box-sizing: border-box;
+    width: 50%;
+    aspect-ratio: 6 / 1;
+    background-color: rgb(190, 146, 93);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}

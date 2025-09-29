@@ -1,0 +1,131 @@
+body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #030303e7;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameBody {
+    width: 100%;
+    aspect-ratio: 2 / 1;
+}
+
+#background {
+    position: absolute;
+    width: 100%;
+    aspect-ratio: 2 / 1;
+    background-image: var(--background);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.exit {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 5%;
+    height: 5%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+}
+
+/*Map buttons position*/
+.buttons {
+    position: absolute;
+    width: 100%;
+    aspect-ratio: 2 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons .svgposition1 {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.buttons .svgposition2 {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+/*SVG map buttons size*/
+.mapsvg {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+/*Changing color based on whether you beat the lvl or not*/
+.inactive {
+    --cls1: #777;
+    --cls2: #030303;
+    --cls3: #b9b9b9;
+    --cls4: none;
+    --cls5: #b7b7b7;
+}
+.active {
+    --cls1: #ffc400;
+    --cls2: #030303;
+    --cls3: #fffb00;
+    --cls4: none;
+    --cls5: #b7b7b7;
+}
+
+#lvlContainer {
+    position: absolute; bottom: 0%; left: 0%;
+    border: 5px solid black;
+    border-radius: 1vw;
+    margin: 0;
+    padding: 1%;
+    background-color: rgb(58, 31, 0);
+    height: 20%;
+    aspect-ratio: 3 / 1;
+
+}
+
+.lvl {
+    height: 60%;
+    aspect-ratio: 1 / 1;
+    background-color: rgb(190, 146, 93);
+    box-sizing: border-box;
+    border: 5px solid black;
+    border-radius: 50%;
+    font-size: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.expBar {
+    position: relative;
+    margin-top: 1%;
+    width: 90%;
+    aspect-ratio: 20 / 1;
+    border: 5px solid black;
+    color: white;
+}
+
+#expBar {
+    position: absolute;
+    background-color: rgb(255, 183, 0);
+    height: 100%;
+}
+
+.expInfo {
+    position: absolute;
+    font-size: 1vw;
+    z-index: 2;
+    height: 100%;
+    text-align: center;
+    margin-left: 1%;
+}

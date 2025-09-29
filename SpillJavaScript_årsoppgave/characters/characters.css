@@ -1,0 +1,152 @@
+body {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.characters {
+    background-image: url(/Bilder/Stat_screen/book.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+    width: 90%;
+    margin-top: 20%;
+    margin-bottom: 20%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: row;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    min-height: 150%;
+    margin: 0%;
+    padding: 0%;
+    border: none;
+}
+
+.stats {
+    position: relative;
+    width: 40%;
+    height: 70%;
+    margin-right: 5%;
+    margin: 0%;
+    padding: 0%;
+    visibility: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.statHidden {
+    visibility: hidden !important;
+}
+
+.numbers {
+    position: relative;
+    width: 100%;
+    height: 20%;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.numbers h1 {
+    width: 10%;
+    font-size: 120%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.numbers p {
+    width: 10%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.arrowZindex {
+    z-index: 4;
+    pointer-events: auto;
+}
+
+.exit {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 5%;
+    height: 5%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.canvasContainer {
+    background-image: url(/Bilder/Stat_screen/Stats.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.canvasContainer .spancontainer {
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#skillpage {
+    position: fixed; top: 3%; right: 0%;
+    width: 5%;
+    height: auto;
+}
+
+.skillcontainer {
+    position: absolute;
+    width: 40%;
+    height: 90%;
+    z-index: 1;
+    padding: 0%;
+    margin-right: 5%;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.skillcontainerShow {
+    visibility: visible !important;
+}
+
+.skillinfo {
+    height: 25%;
+    width: 100%;
+    margin: 0%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

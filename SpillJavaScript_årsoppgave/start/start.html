@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="start.css">
+    <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+    <div class="gameBody">
+        <div id="background"></div>
+        
+        <div id="lvlContainer">
+            <div class="lvl">
+                <span id="currentLvL"></span>
+            </div>
+            
+            <div class="expBar">
+                <div id="expBar"></div>
+                <div class="expInfo">
+                    <span id="exp"></span>
+                    <span>/</span>
+                    <span id="expRequired"></span>
+                </div>
+            </div>
+        </div>
+
+        <div id="menu">
+            <div id="title">
+                <img src="/Bilder/Start_screen/Title.png">
+            </div>
+            <button id="map">
+                <div class="buttoncontainer">
+                    <img id="PlayButton" class="button" src="/Bilder/Start_screen/Play.png" onclick="map()">
+                </div>
+                <div class="swordcontainer">
+                <img class="sword" src="/Bilder/Start_screen/sword.png">
+                </div>
+            </button>
+            <button id="characters">
+                <div class="buttoncontainer">
+                    <img id="CharacterButton" class="button" src="/Bilder/Start_screen/Characters.png" onclick="characters()">
+                </div>
+                <div class="swordcontainer">
+                    <img class="sword" src="/Bilder/Start_screen/sword.png">
+                </div>
+            </button>
+            <button id="settings">
+                <div class="buttoncontainer">
+                    <img id="SettingButton" class="button" src="/Bilder/Start_screen/Settings.png" onclick="settings()">
+                </div>
+                <div class="swordcontainer">
+                    <img class="sword" src="/Bilder/Start_screen/sword.png">
+                </div>
+            </button>
+        </div>
+    </div>
+</body>
+<script src="start.js"></script>
+<script src="/main.js"></script>
+</html>
